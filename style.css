@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    font-family: Arial, sans-serif;
+}
+
+    nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 80px;
+
+    background:rgba(10,10,10,0.7);
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+}
+
+.logo{
+    font-size:14px;
+    letter-spacing:4px;
+    font-weight:600;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav li{
+    color:#a0a0a0;
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+nav li:hover{
+    color:white;
+}
+.hero{
+    
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding: 120px 80px 0 80px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.small-text{
+    color:#7a7a7a;
+    letter-spacing:3px;
+    margin-bottom:25px;
+    font-size:13px;
+}
+
+.hero h1{
+    font-size:140px;
+    line-height:0.9;
+    font-weight:700;
+}
+
+.hero-description{
+    margin-top:35px;
+
+    max-width:550px;
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+.hero-btn{
+    margin-top:40px;
+
+    background:transparent;
+
+    color:white;
+
+    border:1px solid white;
+
+    padding:18px 36px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:white;
+    color:black;
+    transform:translateY(-3px);
+    .hero-btn{
+    transition:all 0.3s ease;
+}
+}
+.experience{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 80px;
+}
+
+.section-tag{
+
+    color:#7a7a7a;
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+}
+
+.experience h2{
+
+    font-size:80px;
+
+    line-height:1.1;
+
+    max-width:1000px;
+}
+.featured{
+
+    padding:120px 80px;
+
+    display:flex;
+
+    gap:80px;
+
+    align-items:center;
+}
+
+.featured img{
+
+    width:55%;
+
+    border-radius:20px;
+}
+
+.featured-text{
+
+    flex:1;
+}
+
+.featured-text h2{
+
+    font-size:60px;
+
+    line-height:1.1;
+}
+.menu-showcase{
+    padding:120px 80px;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:40px 0;
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+
+    transition:all 0.4s ease;
+
+    cursor:pointer;
+}
+.menu-item:hover{
+
+    padding-left:25px;
+
+    background:rgba(255,255,255,0.03);
+}
+
+.menu-item h3{
+
+    font-size:60px;
+
+    font-weight:700;
+
+    transition:all 0.4s ease;
+}
+.menu-item:hover h3{
+
+    color:#d4d4d4;
+}
+
+.menu-item span{
+    font-size:24px;
+    color:#bdbdbd;
+}
+.reservation{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px;
+}
+
+.reservation h2{
+
+    font-size:90px;
+
+    max-width:900px;
+
+    line-height:1.1;
+
+    margin:30px 0;
+}
+
+.showcase{
+
+    height:100vh;
+
+    background-image:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.overlay{
+
+    background:rgba(0,0,0,0.55);
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+.showcase h2{
+
+    font-size:90px;
+
+    max-width:1000px;
+
+    line-height:1.05;
+}
+.hero-content{
+
+    animation:fadeUp 1.2s ease;
+}
+.hero-content{
+
+    animation:fadeUp 1.2s ease;
+}
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+footer{
+
+    padding:80px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,0.1);
+}
+
+footer p{
+
+    color:#a0a0a0;
+
+    margin:10px 0;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        padding:20px;
+    }
+
+    nav ul{
+        display:none;
+    }
+
+    .hero,
+    .experience,
+    .statement,
+    .menu-showcase{
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    .hero h1{
+        font-size:60px;
+    }
+
+    .experience h2,
+    .statement h2,
+    .showcase h2,
+    .reservation h2{
+        font-size:45px;
+    }
+
+    .featured{
+        flex-direction:column;
+        padding:80px 25px;
+    }
+
+    .featured img{
+        width:100%;
+    }
+
+    .menu-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .menu-item h3{
+        font-size:36px;
+    }
+}
+
+
+
+
