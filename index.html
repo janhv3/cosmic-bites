@@ -1,73 +1,190 @@
+  ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janhvi Hardainiya | Portfolio</title>
+    <title>Cosmic Bites</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
+
 <body>
 
-<nav>
-    <h2>Janhvi Hardainiya</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">COSMIC BITES</div>
 
-<header>
-    <h1>Cloud Computing Intern</h1>
-    <p>Building cloud-based solutions and learning modern technologies.</p>
-    <button onclick="showMessage()">Explore</button>
-</header>
+        <ul>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Hello! I'm Janhvi Hardainiya. Currently pursuing my journey in technology
-        and cloud computing. This website is part of my internship project
-        where I learn website hosting and cloud deployment.
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-text">
+                MODERN DINING EXPERIENCE
+            </p>
+
+            <h1>
+                TASTE<br>
+                BEYOND<br>
+                EARTH
+            </h1>
+
+            <p class="hero-description">
+                A futuristic restaurant experience where exceptional
+                food meets modern design.
+            </p>
+
+            <button class="hero-btn">
+                RESERVE A TABLE
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="experience">
+
+        <div class="experience-text" data-aos="fade-up">
+
+            <p class="section-tag">
+                EXPERIENCE
+            </p>
+
+            <h2>
+                Dining is not just food.
+                <br>
+                It's an experience.
+            </h2>
+
+        </div>
+
+    </section>
+
+    <section class="featured">
+
+        <img
+        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200"
+        alt="Featured Dish"
+        data-aos="fade-right">
+
+        <div class="featured-text" data-aos="fade-left">
+
+            <p class="section-tag">
+                SIGNATURE DISH
+            </p>
+
+            <h2>
+                Crafted for
+                <br>
+                the extraordinary.
+            </h2>
+
+        </div>
+
+    </section>
+
+    <section class="statement">
+
+    <p class="section-tag">
+        PHILOSOPHY
     </p>
-</section>
 
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>Static Website Hosting</h3>
-        <p>Created and hosted a static website using cloud technologies.</p>
-    </div>
-
-    <div class="card">
-        <h3>Dynamic Website Hosting</h3>
-        <p>Upcoming internship project.</p>
-    </div>
-
-    <div class="card">
-        <h3>Attendance Management System</h3>
-        <p>Upcoming internship project.</p>
-    </div>
-
-    <div class="card">
-        <h3>Bus Ticketing System</h3>
-        <p>Upcoming internship project.</p>
-    </div>
+    <h2 data-aos="fade-up">
+        We don't just serve meals.
+        <br>
+        We create moments.
+    </h2>
 
 </section>
+<section class="menu-showcase">
 
-<section id="contact">
-    <h2>Contact: 9098881841</h2>
-    <p>Email: jhardainiya@gmail.com</p>
-    <p>Location: India</p>
+    <p class="section-tag">
+        SIGNATURE MENU
+    </p>
+
+    <div class="menu-item" data-aos="fade-up">
+        <h3>NEBULA PASTA</h3>
+        <span>₹399</span>
+    </div>
+
+    <div class="menu-item" data-aos="fade-up">
+        <h3>GALAXY BURGER</h3>
+        <span>₹349</span>
+    </div>
+
+    <div class="menu-item" data-aos="fade-up">
+        <h3>COSMIC PIZZA</h3>
+        <span>₹499</span>
+    </div>
+
+    <div class="menu-item" data-aos="fade-up">
+        <h3>MOONLIGHT DESSERT</h3>
+        <span>₹299</span>
+    </div>
+
+</section>
+<section class="showcase">
+
+    <div class="overlay">
+
+        <p class="section-tag">
+            ATMOSPHERE
+        </p>
+
+        <h2>
+            Designed for
+            unforgettable nights.
+        </h2>
+
+    </div>
+
+</section>
+<section class="reservation">
+
+    <p class="section-tag">
+        RESERVE
+    </p>
+
+    <h2>
+        Ready for an
+        unforgettable evening?
+    </h2>
+
+    <button class="hero-btn">
+        BOOK A TABLE
+    </button>
+
 </section>
 
-<footer>
-    <p>© 2026 Janhvi Hardainiya | Pinnacle Labs Internship</p>
-</footer>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-<script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
+```
+<footer>
+
+    <p>© 2026 Cosmic Bites</p>
+
+    <p>
+        Crafted with passion. Designed for experience.
+    </p>
+
+</footer>
